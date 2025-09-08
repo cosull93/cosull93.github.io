@@ -1,0 +1,24 @@
+---
+title: "PySpark Example"
+format: html
+execute:
+  echo: true
+  warning: false
+  error: false
+---
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder.appName("example").getOrCreate()
+
+# Example data
+data = [
+    ("Caroline", 32),
+    ("Mike", 34),
+    ("Ryan", 34),
+    ("Katie", 32)
+]
+columns = ["Name", "Age"]
+
+# Create DataFrame
+df = spark.createDataFrame(data, columns)
+df.show()
