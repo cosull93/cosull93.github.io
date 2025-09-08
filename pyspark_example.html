@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Caroline O’Sullivan">
-<meta name="dcterms.date" content="2025-09-07">
 
-<title>Welcome to My Website – cosull93.github.io</title>
+<title>PySpark Example – cosull93.github.io</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5f8556b9f65a301940c6d966af7fdf44.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-56309892f1c796412271d97dce1f9b6b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -95,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -118,7 +116,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#hello-world" id="toc-hello-world" class="nav-link active" data-scroll-target="#hello-world">Hello, World!</a></li>
+  <li><a href="#example-data" id="toc-example-data" class="nav-link active" data-scroll-target="#example-data">Example data</a></li>
+  <li><a href="#create-dataframe" id="toc-create-dataframe" class="nav-link" data-scroll-target="#create-dataframe">Create DataFrame</a></li>
   </ul>
 </nav>
     </div>
@@ -127,26 +126,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Welcome to My Website</h1>
+<h1 class="title">PySpark Example</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Caroline O’Sullivan </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 7, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -156,9 +143,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="hello-world" class="level1">
-<h1>Hello, World!</h1>
-<p>Welcome to my Quarto website.</p>
+<p>from pyspark.sql import SparkSession</p>
+<p>spark = SparkSession.builder.appName(“example”).getOrCreate()</p>
+<section id="example-data" class="level1">
+<h1>Example data</h1>
+<p>data = [ (“Caroline”, 32), (“Mike”, 34), (“Ryan”, 34), (“Katie”, 32)] columns = [“Name”, “Age”]</p>
+</section>
+<section id="create-dataframe" class="level1">
+<h1>Create DataFrame</h1>
+<p>df = spark.createDataFrame(data, columns) df.show()</p>
 
 
 </section>

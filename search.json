@@ -12,5 +12,12 @@
     "title": "Welcome to My Website",
     "section": "",
     "text": "Hello, World!\nWelcome to my Quarto website."
+  },
+  {
+    "objectID": "pyspark_example.html",
+    "href": "pyspark_example.html",
+    "title": "PySpark Example",
+    "section": "",
+    "text": "from pyspark.sql import SparkSession\nspark = SparkSession.builder.appName(“example”).getOrCreate()\n\nExample data\ndata = [ (“Caroline”, 32), (“Mike”, 34), (“Ryan”, 34), (“Katie”, 32)] columns = [“Name”, “Age”]\n\n\nCreate DataFrame\ndf = spark.createDataFrame(data, columns) df.show()"
   }
 ]
