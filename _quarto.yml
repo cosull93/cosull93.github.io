@@ -4,10 +4,13 @@ project:
 website:
   title: "cosull93.github.io"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
+      - href: pyspark_example.qmd
+        text: PySpark Example
 
 format:
   html:
@@ -16,6 +19,3 @@ format:
       - brand
     css: styles.css
     toc: true
-
-
-
