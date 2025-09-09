@@ -43,4 +43,4 @@ jobs:
         with:
           target: gh-pages
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          QUARTO_PUB_AUTH_TOKEN: ${{ secrets.GH_PAT }}
