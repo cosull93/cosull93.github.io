@@ -17,7 +17,7 @@ data = [
     ("Caroline", 32),
     ("Mike", 34),
     ("Ryan", 34),
-    ("Katie", 32)
+    ("Katie", 33)
 ]
 columns = ["Name", "Age"]
 
