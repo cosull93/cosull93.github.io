@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -98,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./cv.html" aria-current="page"> 
+    <a class="nav-link" href="./cv"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
@@ -116,9 +116,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -166,7 +164,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <!-- Timeline CSS -->
 <style>
-/* Timeline container */
 .timeline {
   position: relative;
   max-width: 800px;
@@ -174,7 +171,6 @@ ul.task-list li input[type="checkbox"] {
   padding: 20px 0;
 }
 
-/* Timeline vertical line */
 .timeline::after {
   content: '';
   position: absolute;
@@ -186,26 +182,22 @@ ul.task-list li input[type="checkbox"] {
   margin-left: -2px;
 }
 
-/* Timeline items */
 .timeline-item {
   padding: 20px 30px;
   position: relative;
   width: 50%;
 }
 
-/* Left items */
 .timeline-item.left {
   left: 0;
   text-align: right;
 }
 
-/* Right items */
 .timeline-item.right {
   left: 50%;
   text-align: left;
 }
 
-/* Timeline circles */
 .timeline-item::before {
   content: '';
   position: absolute;
@@ -218,7 +210,6 @@ ul.task-list li input[type="checkbox"] {
   z-index: 1;
 }
 
-/* Adjust circles for left/right items */
 .timeline-item.left::before {
   right: -10px;
 }
@@ -227,7 +218,6 @@ ul.task-list li input[type="checkbox"] {
   left: -10px;
 }
 
-/* Text styling */
 .timeline-item h3 {
   margin: 0;
   font-size: 1.1em;
