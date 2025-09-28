@@ -4,8 +4,8 @@ project:
 website:
   navbar:
     left:
-      - text: About You
-        href: about.qmd
+      - text: Home
+        href: index.html
       - text: Projects
         href: pyspark_example.qmd
       - text: CV
