@@ -1,6 +1,8 @@
 ---
 title: "My CV"
-format: html
+format: 
+  html:
+    toc: false
 ---
 
 <!-- Timeline HTML -->
@@ -32,7 +34,6 @@ format: html
 
 <!-- Timeline CSS -->
 <style>
-/* Timeline container */
 .timeline {
   position: relative;
   max-width: 800px;
@@ -40,7 +41,6 @@ format: html
   padding: 20px 0;
 }
 
-/* Timeline vertical line */
 .timeline::after {
   content: '';
   position: absolute;
@@ -52,26 +52,22 @@ format: html
   margin-left: -2px;
 }
 
-/* Timeline items */
 .timeline-item {
   padding: 20px 30px;
   position: relative;
   width: 50%;
 }
 
-/* Left items */
 .timeline-item.left {
   left: 0;
   text-align: right;
 }
 
-/* Right items */
 .timeline-item.right {
   left: 50%;
   text-align: left;
 }
 
-/* Timeline circles */
 .timeline-item::before {
   content: '';
   position: absolute;
@@ -84,7 +80,6 @@ format: html
   z-index: 1;
 }
 
-/* Adjust circles for left/right items */
 .timeline-item.left::before {
   right: -10px;
 }
@@ -93,7 +88,6 @@ format: html
   left: -10px;
 }
 
-/* Text styling */
 .timeline-item h3 {
   margin: 0;
   font-size: 1.1em;
