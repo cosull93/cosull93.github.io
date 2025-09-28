@@ -2,7 +2,7 @@
 title: "Hi! I'm Caroline"
 ---
 <div style="text-align:center; margin-bottom:20px;">
-  <img src="/Users/carolineosullivan/Documents/githubpic.JPG" alt="Caroline O'Sullivan" style="width:150px; height:150px; border-radius:50%; object-fit:cover;">
+  <img src="images/githubpic.JPG" alt="Caroline O'Sullivan" style="width:150px; height:150px; border-radius:50%; object-fit:cover;">
 </div>
 
 I'm a Product Manager based in NYC passionate about building data and reporting tools that make information clear, actionable, and impactful. 
