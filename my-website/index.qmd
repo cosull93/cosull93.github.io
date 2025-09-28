@@ -35,8 +35,8 @@ body, h1, p {
   white-space: nowrap;
   overflow: hidden;
   border-right: 4px solid #2a9d8f; /* cursor effect */
-  width: 0;
-  animation: typing 3s steps(18, end) forwards, blink 0.75s step-end infinite;
+  width: 16ch;
+  animation: typing 3s steps(16, end) forwards, blink 0.75s step-end infinite;
   margin-bottom: 20px;
 }
 
