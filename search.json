@@ -1,10 +1,24 @@
 [
   {
+    "objectID": "my-website/about.html",
+    "href": "my-website/about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Website",
+    "section": "",
+    "text": "Hello, World!\nWelcome to my Quarto website."
   },
   {
     "objectID": "pyspark_example.html",
@@ -14,10 +28,10 @@
     "text": "from pyspark.sql import SparkSession\n\nspark = SparkSession.builder.appName(\"example\").getOrCreate()\n\n# Example data\ndata = [\n    (\"Caroline\", 32),\n    (\"Mike\", 34),\n    (\"Ryan\", 34),\n    (\"Katie\", 33)\n]\ncolumns = [\"Name\", \"Age\"]\n\n# Create DataFrame\ndf = spark.createDataFrame(data, columns)\ndf.show()\n\n+--------+---+\n|    Name|Age|\n+--------+---+\n|Caroline| 32|\n|    Mike| 34|\n|    Ryan| 34|\n|   Katie| 33|\n+--------+---+"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to My Website",
+    "objectID": "my-website/index.html",
+    "href": "my-website/index.html",
+    "title": "my-website",
     "section": "",
-    "text": "Hello, World!\nWelcome to my Quarto website."
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   }
 ]
