@@ -19,5 +19,12 @@
     "title": "PySpark Example",
     "section": "",
     "text": "from pyspark.sql import SparkSession\n\nspark = SparkSession.builder.appName(\"example\").getOrCreate()\n\n# Example data\ndata = [\n    (\"Caroline\", 32),\n    (\"Mike\", 34),\n    (\"Ryan\", 34),\n    (\"Katie\", 32)\n]\ncolumns = [\"Name\", \"Age\"]\n\n# Create DataFrame\ndf = spark.createDataFrame(data, columns)\ndf.show()\n\n+--------+---+\n|    Name|Age|\n+--------+---+\n|Caroline| 32|\n|    Mike| 34|\n|    Ryan| 34|\n|   Katie| 32|\n+--------+---+"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "My CV",
+    "section": "",
+    "text": "&lt;h3&gt;Senior Product Associate&lt;/h3&gt;\n&lt;p&gt;55ip&lt;/p&gt;\n&lt;p&gt;Dec 2023 – Present&lt;/p&gt;\n\n\n&lt;h3&gt;Portfolio Analytics Relationship Manager&lt;/h3&gt;\n&lt;p&gt;Bloomberg&lt;/p&gt;\n&lt;p&gt;May 2022 – Dec 2023&lt;/p&gt;\n\n\n&lt;h3&gt;Portfolio Product Analyst Team Leader&lt;/h3&gt;\n&lt;p&gt;Bloomberg&lt;/p&gt;\n&lt;p&gt;Aug 2020 – May 2022&lt;/p&gt;\n\n\n&lt;h3&gt;Senior Portfolio Product Analyst&lt;/h3&gt;\n&lt;p&gt;Bloomberg&lt;/p&gt;\n&lt;p&gt;Sept 2017 – Aug 2020&lt;/p&gt;"
   }
 ]
