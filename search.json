@@ -21,6 +21,13 @@
     "text": "Hello, World!\nWelcome to my Quarto website."
   },
   {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "My CV",
+    "section": "",
+    "text": "&lt;h3&gt;Senior Product Associate&lt;/h3&gt;\n&lt;p&gt;55ip&lt;/p&gt;\n&lt;p&gt;Dec 2023 – Present&lt;/p&gt;\n\n\n&lt;h3&gt;Portfolio Analytics Relationship Manager&lt;/h3&gt;\n&lt;p&gt;Bloomberg&lt;/p&gt;\n&lt;p&gt;May 2022 – Dec 2023&lt;/p&gt;\n\n\n&lt;h3&gt;Portfolio Product Analyst Team Leader&lt;/h3&gt;\n&lt;p&gt;Bloomberg&lt;/p&gt;\n&lt;p&gt;Aug 2020 – May 2022&lt;/p&gt;\n\n\n&lt;h3&gt;Senior Portfolio Product Analyst&lt;/h3&gt;\n&lt;p&gt;Bloomberg&lt;/p&gt;\n&lt;p&gt;Sept 2017 – Aug 2020&lt;/p&gt;"
+  },
+  {
     "objectID": "pyspark_example.html",
     "href": "pyspark_example.html",
     "title": "PySpark Example",
