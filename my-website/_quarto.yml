@@ -9,7 +9,7 @@ website:
       - text: Projects
         href: pyspark_example.qmd
       - text: CV
-        href: cv.qmd
+        href: cv.html
       - text: Contact
         href: contact.qmd
 
