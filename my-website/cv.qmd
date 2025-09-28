@@ -1,0 +1,107 @@
+---
+title: "My CV"
+format: html
+---
+
+<!-- Timeline HTML -->
+<div class="timeline">
+  <div class="timeline-item left">
+    <h3>Senior Product Associate</h3>
+    <p>55ip</p>
+    <p>Dec 2023 – Present</p>
+  </div>
+
+  <div class="timeline-item right">
+    <h3>Portfolio Analytics Relationship Manager</h3>
+    <p>Bloomberg</p>
+    <p>May 2022 – Dec 2023</p>
+  </div>
+
+  <div class="timeline-item left">
+    <h3>Portfolio Product Analyst Team Leader</h3>
+    <p>Bloomberg</p>
+    <p>Aug 2020 – May 2022</p>
+  </div>
+
+  <div class="timeline-item right">
+    <h3>Senior Portfolio Product Analyst</h3>
+    <p>Bloomberg</p>
+    <p>Sept 2017 – Aug 2020</p>
+  </div>
+</div>
+
+<!-- Timeline CSS -->
+<style>
+/* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px 0;
+}
+
+/* Timeline vertical line */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #ddd;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+/* Timeline items */
+.timeline-item {
+  padding: 20px 30px;
+  position: relative;
+  width: 50%;
+}
+
+/* Left items */
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+/* Right items */
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+/* Timeline circles */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #4CAF50;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  top: 20px;
+  z-index: 1;
+}
+
+/* Adjust circles for left/right items */
+.timeline-item.left::before {
+  right: -10px;
+}
+
+.timeline-item.right::before {
+  left: -10px;
+}
+
+/* Text styling */
+.timeline-item h3 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.timeline-item p {
+  margin: 5px 0;
+  color: #666;
+}
+</style>

@@ -7,7 +7,7 @@ website:
       - text: About You
         href: about.qmd
       - text: Projects
-        href: projects.qmd
+        href: pyspark_example.qmd
       - text: CV
         href: cv.qmd
       - text: Contact
