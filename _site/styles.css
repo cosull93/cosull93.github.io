@@ -1,1 +1,66 @@
 /* css styles */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #ddd;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline-item {
+  padding: 20px 30px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #4CAF50;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  top: 20px;
+  z-index: 1;
+}
+
+.timeline-item.left::before {
+  right: -10px;
+}
+
+.timeline-item.right::before {
+  left: -10px;
+}
+
+.timeline-item h3 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.timeline-item p {
+  margin: 5px 0;
+  color: #666;
+}
+

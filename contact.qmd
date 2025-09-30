@@ -1,0 +1,25 @@
+## Get in Touch
+
+<div class="contact-cards">
+
+  <div class="contact-card">
+    <h3>📧 Email</h3>
+    <p><a href="mailto:cosull93@bu.edu">cosull93@bu.edu</a></p>
+  </div>
+
+  <div class="contact-card">
+    <h3>📱 Phone</h3>
+    <p><a href="tel:16178514476">(617) 851-4476</a></p>
+  </div>
+
+  <div class="contact-card">
+    <h3>💼 LinkedIn</h3>
+    <p><a href="https://www.linkedin.com/in/carolineosullivan2/" target="_blank">linkedin.com/in/carolineosullivan2/</a></p>
+  </div>
+
+  <div class="contact-card">
+    <h3>🐙 GitHub</h3>
+    <p><a href="https://github.com/cosull93" target="_blank">github.com/cosull93</a></p>
+  </div>
+
+</div>
