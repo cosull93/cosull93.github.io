@@ -7,25 +7,11 @@
     "text": "About this site"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "my-website/index.html",
+    "href": "my-website/index.html",
     "title": "Welcome to My Site",
     "section": "",
     "text": "Hi! I’m Caroline\n\n\n\n\n\n\n\nI’m a Product Manager based in NYC passionate about building data and reporting tools that make information clear, actionable, and impactful. I love connecting the dots between business needs and technical solutions."
-  },
-  {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "My CV",
-    "section": "",
-    "text": "&lt;h3&gt;Senior Product Associate&lt;/h3&gt;\n&lt;p&gt;55ip&lt;/p&gt;\n&lt;p&gt;Dec 2023 – Present&lt;/p&gt;\n\n\n&lt;h3&gt;Portfolio Analytics Relationship Manager&lt;/h3&gt;\n&lt;p&gt;Bloomberg&lt;/p&gt;\n&lt;p&gt;May 2022 – Dec 2023&lt;/p&gt;\n\n\n&lt;h3&gt;Portfolio Product Analyst Team Leader&lt;/h3&gt;\n&lt;p&gt;Bloomberg&lt;/p&gt;\n&lt;p&gt;Aug 2020 – May 2022&lt;/p&gt;\n\n\n&lt;h3&gt;Senior Portfolio Product Analyst&lt;/h3&gt;\n&lt;p&gt;Bloomberg&lt;/p&gt;\n&lt;p&gt;Sept 2017 – Aug 2020&lt;/p&gt;"
   },
   {
     "objectID": "pyspark_example.html",
@@ -35,11 +21,39 @@
     "text": "from pyspark.sql import SparkSession\n\nspark = SparkSession.builder.appName(\"example\").getOrCreate()\n\n# Example data\ndata = [\n    (\"Caroline\", 32),\n    (\"Mike\", 34),\n    (\"Ryan\", 34),\n    (\"Katie\", 33)\n]\ncolumns = [\"Name\", \"Age\"]\n\n# Create DataFrame\ndf = spark.createDataFrame(data, columns)\ndf.show()\n\n+--------+---+\n|    Name|Age|\n+--------+---+\n|Caroline| 32|\n|    Mike| 34|\n|    Ryan| 34|\n|   Katie| 33|\n+--------+---+"
   },
   {
-    "objectID": "my-website/index.html",
-    "href": "my-website/index.html",
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "My CV",
+    "section": "",
+    "text": "&lt;h3&gt;Senior Product Associate&lt;/h3&gt;\n&lt;p&gt;55ip&lt;/p&gt;\n&lt;p&gt;Dec 2023 – Present&lt;/p&gt;\n\n\n&lt;h3&gt;Portfolio Analytics Relationship Manager&lt;/h3&gt;\n&lt;p&gt;Bloomberg&lt;/p&gt;\n&lt;p&gt;May 2022 – Dec 2023&lt;/p&gt;\n\n\n&lt;h3&gt;Portfolio Product Analyst Team Leader&lt;/h3&gt;\n&lt;p&gt;Bloomberg&lt;/p&gt;\n&lt;p&gt;Aug 2020 – May 2022&lt;/p&gt;\n\n\n&lt;h3&gt;Senior Portfolio Product Analyst&lt;/h3&gt;\n&lt;p&gt;Bloomberg&lt;/p&gt;\n&lt;p&gt;Sept 2017 – Aug 2020&lt;/p&gt;"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Welcome to My Site",
     "section": "",
     "text": "Hi! I’m Caroline\n\n\n\n\n\n\n\nI’m a Product Manager based in NYC passionate about building data and reporting tools that make information clear, actionable, and impactful. I love connecting the dots between business needs and technical solutions."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "",
+    "section": "",
+    "text": "&lt;h3&gt;📧 Email&lt;/h3&gt;\n&lt;p&gt;&lt;a href=\"mailto:cosull93@bu.edu\"&gt;cosull93@bu.edu&lt;/a&gt;&lt;/p&gt;\n\n\n&lt;h3&gt;📱 Phone&lt;/h3&gt;\n&lt;p&gt;&lt;a href=\"tel:16178514476\"&gt;(617) 851-4476&lt;/a&gt;&lt;/p&gt;\n\n\n&lt;h3&gt;💼 LinkedIn&lt;/h3&gt;\n&lt;p&gt;&lt;a href=\"https://www.linkedin.com/in/carolineosullivan2/\" target=\"_blank\"&gt;linkedin.com/in/carolineosullivan2/&lt;/a&gt;&lt;/p&gt;\n\n\n&lt;h3&gt;🐙 GitHub&lt;/h3&gt;\n&lt;p&gt;&lt;a href=\"https://github.com/cosull93\" target=\"_blank\"&gt;github.com/cosull93&lt;/a&gt;&lt;/p&gt;"
+  },
+  {
+    "objectID": "contact.html#get-in-touch",
+    "href": "contact.html#get-in-touch",
+    "title": "",
+    "section": "",
+    "text": "&lt;h3&gt;📧 Email&lt;/h3&gt;\n&lt;p&gt;&lt;a href=\"mailto:cosull93@bu.edu\"&gt;cosull93@bu.edu&lt;/a&gt;&lt;/p&gt;\n\n\n&lt;h3&gt;📱 Phone&lt;/h3&gt;\n&lt;p&gt;&lt;a href=\"tel:16178514476\"&gt;(617) 851-4476&lt;/a&gt;&lt;/p&gt;\n\n\n&lt;h3&gt;💼 LinkedIn&lt;/h3&gt;\n&lt;p&gt;&lt;a href=\"https://www.linkedin.com/in/carolineosullivan2/\" target=\"_blank\"&gt;linkedin.com/in/carolineosullivan2/&lt;/a&gt;&lt;/p&gt;\n\n\n&lt;h3&gt;🐙 GitHub&lt;/h3&gt;\n&lt;p&gt;&lt;a href=\"https://github.com/cosull93\" target=\"_blank\"&gt;github.com/cosull93&lt;/a&gt;&lt;/p&gt;"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   },
   {
     "objectID": "my-website/cv.html",
