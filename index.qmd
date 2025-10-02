@@ -63,53 +63,10 @@ body, h1, p {
 }
 </style>
 
-## My Travel Map
-Check out the places I've visited around the world!
-
-```{python}
-import pandas as pd
-import plotly.express as px
-from geopy.geocoders import Nominatim
-
-# List of cities
-cities = [
-    "Boston, MA, USA", "Chicago, IL, USA", "San Diego, CA, USA",
-    "Los Angeles, CA, USA", "San Francisco, CA, USA", "Austin, TX, USA",
-    "Denver, CO, USA", "London, UK", "Dublin, IE", "Paris, France",
-    "Florence, IT", "Rome, IT", "Milan, IT", "Munich, DE", "Zurich, Switzerland",
-    "Phuket, Thailand", "Tokyo, JP"
-]
-
-# Geocode cities
-geolocator = Nominatim(user_agent="city_mapper")
-latitudes, longitudes = [], []
-
-for city in cities:
-    location = geolocator.geocode(city)
-    if location:
-        latitudes.append(location.latitude)
-        longitudes.append(location.longitude)
-    else:
-        latitudes.append(None)
-        longitudes.append(None)
-
-# DataFrame
-df = pd.DataFrame({
-    "City": cities,
-    "Latitude": latitudes,
-    "Longitude": longitudes
-})
-
-# Plotly map
-fig = px.scatter_geo(
-    df,
-    lat="Latitude",
-    lon="Longitude",
-    hover_name="City",
-    projection="natural earth",
-    title="Places I've Visited",
-    template="plotly_dark"
-)
-fig.update_traces(marker=dict(size=10, color="cyan"))
-fig.show()
-```
+<div style="text-align:center; margin-top:30px;">
+  <a href="travel_map.html">
+    <button style="padding:10px 20px; font-size:16px; background-color:#2a9d8f; color:white; border:none; border-radius:5px;">
+      View My Travel Map
+    </button>
+  </a>
+</div>
