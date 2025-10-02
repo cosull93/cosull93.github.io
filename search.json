@@ -14,25 +14,11 @@
     "text": "Hi! I’m Caroline\n\n\n\n\n\n\n\nI’m a Product Manager based in NYC passionate about building data and reporting tools that make information clear, actionable, and impactful. I love connecting the dots between business needs and technical solutions."
   },
   {
-    "objectID": "pyspark_example.html",
-    "href": "pyspark_example.html",
-    "title": "PySpark Example",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "from pyspark.sql import SparkSession\n\nspark = SparkSession.builder.appName(\"example\").getOrCreate()\n\n# Example data\ndata = [\n    (\"Caroline\", 32),\n    (\"Mike\", 34),\n    (\"Ryan\", 34),\n    (\"Katie\", 33)\n]\ncolumns = [\"Name\", \"Age\"]\n\n# Create DataFrame\ndf = spark.createDataFrame(data, columns)\ndf.show()\n\n+--------+---+\n|    Name|Age|\n+--------+---+\n|Caroline| 32|\n|    Mike| 34|\n|    Ryan| 34|\n|   Katie| 33|\n+--------+---+"
-  },
-  {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "My CV",
-    "section": "",
-    "text": "Senior Product Associate\n    55ip\n    Dec 2023 – Present\n  \n\n  \n    Portfolio Analytics Relationship Manager\n    Bloomberg\n    May 2022 – Dec 2023\n  \n\n  \n    Portfolio Product Analyst Team Leader\n    Bloomberg\n    Aug 2020 – May 2022\n  \n\n  \n    Senior Portfolio Product Analyst\n    Bloomberg\n    Sept 2017 – Aug 2020"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to My Site",
-    "section": "",
-    "text": "Hi! I’m Caroline\n\n\n\n\n\n\n\nI’m a Product Manager based in NYC passionate about building data and reporting tools that make information clear, actionable, and impactful. I love connecting the dots between business needs and technical solutions."
+    "text": "About this site"
   },
   {
     "objectID": "contact.html",
@@ -49,11 +35,32 @@
     "text": "cosull93@bu.edu\n  \n\n  \n    \n    (617) 851-4476\n  \n\n  \n    \n    linkedin.com/in/carolineosullivan2/\n  \n\n  \n    \n    github.com/cosull93"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Site",
     "section": "",
-    "text": "About this site"
+    "text": "Hi! I’m Caroline\n\n\n\n\n\n\n\nI’m a Product Manager based in NYC passionate about building data and reporting tools that make information clear, actionable, and impactful. I love connecting the dots between business needs and technical solutions.\n\n\n\n\n  View My Travel Map"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "My CV",
+    "section": "",
+    "text": "Senior Product Associate\n    55ip\n    Dec 2023 – Present\n  \n\n  \n    Portfolio Analytics Relationship Manager\n    Bloomberg\n    May 2022 – Dec 2023\n  \n\n  \n    Portfolio Product Analyst Team Leader\n    Bloomberg\n    Aug 2020 – May 2022\n  \n\n  \n    Senior Portfolio Product Analyst\n    Bloomberg\n    Sept 2017 – Aug 2020"
+  },
+  {
+    "objectID": "pyspark_example.html",
+    "href": "pyspark_example.html",
+    "title": "PySpark Example",
+    "section": "",
+    "text": "from pyspark.sql import SparkSession\n\nspark = SparkSession.builder.appName(\"example\").getOrCreate()\n\n# Example data\ndata = [\n    (\"Caroline\", 32),\n    (\"Mike\", 34),\n    (\"Ryan\", 34),\n    (\"Katie\", 33)\n]\ncolumns = [\"Name\", \"Age\"]\n\n# Create DataFrame\ndf = spark.createDataFrame(data, columns)\ndf.show()\n\n+--------+---+\n|    Name|Age|\n+--------+---+\n|Caroline| 32|\n|    Mike| 34|\n|    Ryan| 34|\n|   Katie| 33|\n+--------+---+"
+  },
+  {
+    "objectID": "travel_map.html",
+    "href": "travel_map.html",
+    "title": "",
+    "section": "",
+    "text": "---\ntitle: \"My Travel Map\"\nformat: html\n---\n\n```{python}\nimport pandas as pd\nimport plotly.express as px\n\n# City coordinates\ndata = {\n    \"City\": [\n        \"Boston, MA, USA\", \"Chicago, IL, USA\", \"San Diego, CA, USA\",\n        \"Los Angeles, CA, USA\", \"San Francisco, CA, USA\", \"Austin, TX, USA\",\n        \"Denver, CO, USA\", \"London, England\", \"Dublin, Ireland\",\n        \"Paris, France\", \"Florence, Italy\", \"Rome, Italy\", \"Milan, Italy\",\n        \"Munich, Germany\", \"Zurich, Switzerland\", \"Phuket, Thailand\", \"Tokyo, Japan\"\n    ],\n    \"Latitude\": [\n        42.3601, 41.8781, 32.7157,\n        34.0522, 37.7749, 30.2672,\n        39.7392, 51.5072, 53.3331,\n        48.8566, 43.7699, 41.9028, 45.4642,\n        48.1351, 47.3769, 7.8804, 35.6762\n    ],\n    \"Longitude\": [\n        -71.0589, -87.6298, -117.1611,\n        -118.2437, -122.4194, -97.7431,\n        -104.9903, -0.1276, -6.2489,\n        2.3522, 11.2556, 12.4964, 9.1900,\n        11.5820, 8.5417, 98.3923, 139.6503\n    ]\n}\n\ndf = pd.DataFrame(data)\n\nfig = px.scatter_geo(\n    df,\n    lat=\"Latitude\",\n    lon=\"Longitude\",\n    hover_name=\"City\",\n    projection=\"natural earth\",\n    title=\"Places I've Visited\",\n    template=\"seaborn\"\n)\nfig.update_traces(marker=dict(size=10, color=\"#2E3942\", line=dict(width=1, color='DarkSlateGrey')))\nfig.show()"
   },
   {
     "objectID": "my-website/cv.html",
