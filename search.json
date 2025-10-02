@@ -56,13 +56,6 @@
     "text": "from pyspark.sql import SparkSession\n\nspark = SparkSession.builder.appName(\"example\").getOrCreate()\n\n# Example data\ndata = [\n    (\"Caroline\", 32),\n    (\"Mike\", 34),\n    (\"Ryan\", 34),\n    (\"Katie\", 33)\n]\ncolumns = [\"Name\", \"Age\"]\n\n# Create DataFrame\ndf = spark.createDataFrame(data, columns)\ndf.show()\n\n+--------+---+\n|    Name|Age|\n+--------+---+\n|Caroline| 32|\n|    Mike| 34|\n|    Ryan| 34|\n|   Katie| 33|\n+--------+---+"
   },
   {
-    "objectID": "travel_map.html",
-    "href": "travel_map.html",
-    "title": "My Travel Map",
-    "section": "",
-    "text": "Unable to display output for mime type(s): application/vnd.plotly.v1+json"
-  },
-  {
     "objectID": "my-website/cv.html",
     "href": "my-website/cv.html",
     "title": "My CV",
