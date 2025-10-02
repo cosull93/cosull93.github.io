@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - travel_map.html
 
 website:
   navbar:
