@@ -2,6 +2,8 @@
 title: "My CV"
 ---
 ```{=html}
+<p><strong>Summary:</strong> Experienced product manager and portfolio analytics professional with a strong background in leading teams, driving product strategy, and delivering client-focused solutions.</p>
+
 <a href="CarolineOSullivan_Resume.pdf" target="_blank">View Resume</a>
 
 <!-- Timeline HTML -->
